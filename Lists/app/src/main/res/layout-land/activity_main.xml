@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.stijn.lists.MainActivity">
+
+    // shows title
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TO-DO list"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    // shows instruction to long-press to remove an item fro list
+
+    <TextView
+        android:id="@+id/removeInstructionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTV"
+        android:layout_centerHorizontal="true"
+        android:text="Long-press an item to remove it."
+        android:textSize="15dp" />
+
+    // takes input from user
+
+    <EditText
+        android:id="@+id/listInputET"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    // set ListView position
+
+    <ListView
+        android:id="@+id/toToListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_below="@id/removeInstructionTV"
+        android:padding="10dip" >
+
+    </ListView>
+
+    // press to add input to list
+
+    <Button
+        android:id="@+id/addToDoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="ADD!"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

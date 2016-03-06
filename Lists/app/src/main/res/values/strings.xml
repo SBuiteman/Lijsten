@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lists</string>
+    <string name="emptyText">Nothing to add.</string>
+    <string name="clickedOn">"You clicked on "</string>
+    <string name="deletedItem">Item deleted</string>
+</resources>
